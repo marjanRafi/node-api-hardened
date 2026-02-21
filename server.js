@@ -1,4 +1,4 @@
-// Production Node.js HTTP API — Zero to Production Hero: Episode 2
+// Production-grade Node.js HTTP API
 const http = require("http");
 const PORT = process.env.PORT || 8080;
 const server = http.createServer((req, res) => {
@@ -8,7 +8,7 @@ const server = http.createServer((req, res) => {
     return;
   }
   res.writeHead(200, { "Content-Type": "application/json" });
-  res.end(JSON.stringify({ message: "Zero to Production Hero: Episode 2" }));
+  res.end(JSON.stringify({ message: "node-api-hardened" }));
 });
 process.on("SIGTERM", () => {
   console.log("SIGTERM received. Closing server gracefully...");

@@ -1,8 +1,8 @@
 # node-api-hardened
 
-> Production-grade, multi-stage Docker build for a Node.js HTTP API  
-> with strict security hardening and Cgroup resource enforcement.  
-> Built as part of the **Zero → Production Hero** series — Episode 2.
+> A production-grade, multi-stage Docker build for a Node.js HTTP API  
+> with strict security hardening, Cgroup resource enforcement,  
+> and zero-downtime signal handling.
 
 ---
 
@@ -165,7 +165,7 @@ docker exec $(docker compose ps -q api) ps aux
 
 | Endpoint | Method | Response |
 |----------|--------|----------|
-| `/` | GET | `{ "message": "Zero → Production Hero: Episode 2" }` |
+| `/` | GET | `{ "message": "node-api-hardened" }` |
 | `/health` | GET | `{ "status": "ok", "pid": 1 }` |
 
 ---
@@ -200,16 +200,6 @@ node-api-hardened/
 └── .gitignore           # Keeps node_modules out of version control
 ```
 
----
-
-## Part of the Zero → Production Hero Series
-
-| Episode | Topic | Status |
-|---------|-------|--------|
-| 1 | Docker Basics & Hello World | ✅ Done |
-| 2 | Multi-Stage Builds & Hardening | ✅ This repo |
-| 3 | Kubernetes Deployment | 🔜 Coming |
-| 4 | CI/CD Pipeline with GitHub Actions | 🔜 Coming |
 
 ---
 
