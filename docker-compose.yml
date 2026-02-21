@@ -1,3 +1,4 @@
+# Production stack — Cgroup limits enforced via --compatibility flag
 version: "3.8"
 services:
   api:
