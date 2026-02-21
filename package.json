@@ -1,8 +1,12 @@
 {
   "name": "node-api-hardened",
   "version": "1.0.0",
-  "description": "Production-grade hardened Node.js API",
+  "description": "Production-grade hardened Node.js API with multi-stage Docker build",
   "main": "server.js",
-  "scripts": { "start": "node server.js" },
-  "engines": { "node": ">=20" }
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
 }
