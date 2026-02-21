@@ -1,0 +1,8 @@
+{
+  "name": "node-api-hardened",
+  "version": "1.0.0",
+  "description": "Production-grade hardened Node.js API",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=20" }
+}
