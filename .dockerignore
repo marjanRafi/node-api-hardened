@@ -1,3 +1,4 @@
+# Prevents credentials, git history, and dev artifacts from leaking into image
 node_modules
 npm-debug.log
 .env
